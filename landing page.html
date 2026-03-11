@@ -6,34 +6,82 @@
     <title>html5tagstudy</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <style>
-        header{background: gray; background-size: 200px 100px;}
+        header{background: gray; background-size: 200px 100px;padding: 10px;}
         #content{display: flex;gap:20px;}
-        #main{flex :3;}
-        aside{background:aliceblue;  flex:1;}
+        aside{background:aliceblue;  flex:1;padding: 10px;}
+        #main{flex :3;background: yellowgreen;padding: 10px;}
+        #img{max-width: 60%;height: auto;}
+        footer{background: bisque;padding: 10px;display: flex;align-items: center;gap:15px;}
     </style>
   </head>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <header>header
+    <header><strong>header</strong>
         <p>mini text</p>
     </header>
-    <div type="content">
-    <main type="main">
-            <strong>MAIN</strong>
-        
-    </main>
-    <aside>
+    <div id="content">
+     <aside>
         <h1>aside</h1>
         <nav class="asidemenu">
             <ul>
-                <p>nav</p>
+                <li>ul속 li</li>
+                <li>
+                <p>nav 링크</p></li>
+                <li>
                 <dl><dt>이름</dt>
                     <dd>설명</dd>
-                    </dl>
+                    </dl></li>
             </ul>    
         </nav>
-    
-    </aside>
+        <p>inputrange</p>
+        <input type="range" max="500" value="300">
+    </aside>    
+    <main id="main">
+            <strong>MAIN</strong>
+            <h1>section</h1>
+            <section>
+                <h2>h1</h2>
+                <p>p1</p>
+            </section>
+            <section>
+                <h2>h2</h2>
+                <p>p2<blockquote>“Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, 
+                    and the universe trying to build bigger and better idiots. So far, the universe is winning.”</blockquote></p>
+            </section>
+            <table class="table">
+            <thead>
+                <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Middle</th>
+                <th scope="col">Last</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th scope="row">1</th>
+                <td>Lick</td>
+                <td></td>
+                <td>cook</td>
+                </tr>
+                <tr>
+                <th scope="row">2</th>
+                <td>Antoine</td>
+                <td>Roger de</td>
+                <td>Saint-Exupéry</td>
+                </tr>
+            </tbody>
+            </table>
+            <img id="img" src="./background.jpg"
+            alt="이미지가 있습니다">
+    </main>
     </div>
+    <footer>
+        <em>footer</em>
+        
+        <b>b</b>
+        <i>i</i>
+        <u>u</u>
+    </footer>
   </body>
 </html>
